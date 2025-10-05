@@ -1,0 +1,57 @@
+{
+  "info": {
+    "name": "Database Task API",
+    "_postman_id": "db-task-sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Posts",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/getPosts"
+      }
+    },
+    {
+      "name": "Add Post",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"title\\\": \\\"Test Post\\\",\\n  \\\"content\\\": \\\"This is a test.\\\"\\n}"
+        },
+        "url": "http://localhost:3000/addPosts"
+      }
+    },
+    {
+      "name": "Delete Post",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:3000/delPosts/:id"
+      }
+    },
+    {
+      "name": "Update Post",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"title\\\": \\\"Updated Title\\\"\\n}"
+        },
+        "url": "http://localhost:3000/post/:id"
+      }
+    }
+  ]
+}

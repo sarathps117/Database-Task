@@ -1,0 +1,16 @@
+{
+  "name": "database-task-api",
+  "version": "1.0.0",
+  "description": "REST API for posts using ExpressJS + Mongoose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0",
+    "body-parser": "^1.20.2"
+  }
+}
